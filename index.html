@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Formu</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--  Application Details Start -->
+    <div class="relative min-h-screen flex items-center justify-center  py-12 px-4 sm:px-6 lg:px-8 bg-gray-500 bg-no-repeat bg-cover"
+	style="background-image: url(https://images.unsplash.com/photo-1621243804936-775306a8f2e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+    <div class="w-full bg-grey-500">
+        <div class="container mx-auto py-8">
+            <div class="w-96 mx-auto bg-white rounded shadow">
+
+                <div class="mx-16 py-4 px-8 text-black text-xl font-bold border-b border-grey-500">Öğrenci Giriş
+                </div>
+
+                <form name="student_application" id="student_application" action="">
+                    <div class="py-4 px-8">
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Öğrenci Numarası:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="student_id" id="student_id" value="" placeholder="Lütfen öğrenci numaranızı giriniz">
+                     
+                        </div>
+
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Öğrenci Adı</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="student_name" id="student_name" value="" placeholder="Adınızı giriniz">
+                      
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Ders Adı:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
+                                name="course_name" id="course_name" value="" placeholder="Ders adını giriniz">
+                            <p id=error_creater_id></p>
+                        </div>
+
+
+                             <div class="mb-4">
+                            <label class="block text-grey-darker text-sm font-bold mb-2">Katılacağı Tarih:</label>
+                            <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="datetime-local"
+                                name="addmission_date" id="addmission_date" value="">
+                            <p id=error_intake_year></p>
+                        </div>
+                        <div class="mb-4">
+                            <button
+                                class="mb-2 mx-16 rounded-full py-1 px-24 bg-gradient-to-r from-green-400 to-blue-500 ">
+                                Kaydet
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!--  Application Details End -->
+
+
+   
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Student Visa End -->
+
+
+
+
+</body>
+
+</html>
