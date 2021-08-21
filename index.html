@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Öğrenci Formu</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <div class="container mx-auto py-8">
             <div class="w-96 mx-auto bg-white rounded shadow">
 
-                <div class="mx-16 py-4 px-8 text-black text-xl font-bold border-b border-grey-500">Öğrenci Giriş
+                <div class="mx-16 py-4 px-10 text-black text-xl font-bold border-b border-grey-500 text-center">Öğrenci Giriş
                 </div>
 
                 <form name="student_application" id="student_application" action="">
@@ -25,7 +26,7 @@
                         <div class="mb-4">
                             <label class="block text-grey-darker text-sm font-bold mb-2">Öğrenci Numarası:</label>
                             <input class=" border rounded w-full py-2 px-3 text-grey-darker" type="text"
-                                name="student_id" id="student_id" value="" placeholder="Lütfen öğrenci numaranızı giriniz">
+                                name="student_id" id="student_id" value="" placeholder="Lütfen öğrenci numaranızı giriniz" >
                      
                         </div>
 
@@ -78,8 +79,28 @@
     </div>
     <!-- Student Visa End -->
 
-
-
+<script>
+  $("#student_id").keypress(function (e) {
+    if (String.fromCharCode(e.keyCode).match(/[^0-9]/g)) return false;
+});
+</script>
+<script>
+$( function() {
+ 
+ $( "#addmission_date" ).datetimepicker({
+    dateFormat: "dd-mm-yy",
+    altFieldTimeOnly: false,
+    altFormat: "yy-mm-dd",
+    altTimeFormat: "h:m",
+    altField:"#tarih-db",
+    monthNames: [ "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık" ],
+    dayNamesMin: [ "Pa", "Pt", "Sl", "Ça", "Pe", "Cu", "Ct" ],
+    firstDay:1
+});
+ 
+ } );
+</script>
+</script>
 
 </body>
 
